@@ -28,7 +28,7 @@ int main(int argc,char *argv[])
     struct ifreq req;
     struct sockaddr_ll send_sll;
     struct sockaddr_ll recv_sll;
-    socklen_t   len = sizeof(recv_sll);
+    socklen_t len = sizeof(recv_sll);
 
     int send_raw_fd = socket(PF_PACKET, SOCK_RAW, htons(ETH_P_ALL));  
     strncpy(req.ifr_name, "C", IFNAMSIZ);              
